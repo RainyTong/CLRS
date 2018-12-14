@@ -26,13 +26,3 @@ class Solution:
             return self.findKthLargest(nums2, k - (len(nums) - len(nums2)))
         return pivot
 
-
-def main1():
-    test_nums = [4, 6, 7, 2, 9, 1, 0, 5]
-    k = 3
-    solu = Solution()
-    print(solu.findKthLargest(test_nums, k))
-
-
-if __name__ == '__main__':
-    main1()
