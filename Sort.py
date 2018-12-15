@@ -10,7 +10,8 @@
 import random
 
 
-class Solution:
+class QuickSelect:
+
     def findKthLargest(self, nums, k):
         pivot = random.choice(nums)
         nums1 = []
@@ -26,3 +27,29 @@ class Solution:
             return self.findKthLargest(nums2, k - (len(nums) - len(nums2)))
         return pivot
 
+
+# O(n log n): HeapSort, MergeSort
+
+
+# avg ==> O(n log n), wst ==> O(n^2): Quick Sort
+class QuickSort:
+
+    def quickSort(self, nums):
+        less = []
+        equal = []
+        greater = []
+        if len(nums) > 1:
+            pivot = random.choice(nums)
+            for num in nums:
+                if num < pivot:
+                    less.append(num)
+                if num == pivot:
+                    equal.append(num)
+                if num > pivot:
+                    greater.append(num)
+            # Don't forget to return something!
+            return self.quickSort(less) + equal + self.quickSort(greater)
+        else:
+            return nums
+
+# O(n^2): Selection Sort, Insertion Sort, Bubble Sort
