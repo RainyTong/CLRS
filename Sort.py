@@ -52,4 +52,9 @@ class QuickSort:
         else:
             return nums
 
+    def findKthLargest(self, nums, k):
+        ord_nums = self.quickSort(nums)
+        rev_ord_nums = ord_nums[::-1]
+        return rev_ord_nums[k-1]
+
 # O(n^2): Selection Sort, Insertion Sort, Bubble Sort
