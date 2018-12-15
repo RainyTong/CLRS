@@ -6,10 +6,12 @@
 # Find the kth largest element in an unsorted array.
 # Note that it is the kth largest element in the sorted order, not the kth distinct element!
 
-# O(n): QuickSelect 快速选择算法
+
 import random
 
 
+# -------------------------------------------------------------
+# O(n): QuickSelect 快速选择算法
 class QuickSelect:
 
     def findKthLargest(self, nums, k):
@@ -28,9 +30,11 @@ class QuickSelect:
         return pivot
 
 
+# -------------------------------------------------------------
 # O(n log n): HeapSort, MergeSort
 
 
+# -------------------------------------------------------------
 # avg ==> O(n log n), wst ==> O(n^2): Quick Sort
 class QuickSort:
 
@@ -57,4 +61,6 @@ class QuickSort:
         rev_ord_nums = ord_nums[::-1]
         return rev_ord_nums[k-1]
 
+
+# -------------------------------------------------------------
 # O(n^2): Selection Sort, Insertion Sort, Bubble Sort
