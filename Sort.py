@@ -31,14 +31,10 @@ class QuickSelect:
 
 
 # -------------------------------------------------------------
-# O(n log n): HeapSort, MergeSort
+# O(n log n): HeapSort, MergeSort, DevideAndConquerSort
+class DevideAndConquerSort:
 
-
-# -------------------------------------------------------------
-# avg ==> O(n log n), wst ==> O(n^2): Quick Sort
-class QuickSort:
-
-    def quickSort(self, nums):
+    def de_and_conq_Sort(self, nums):
         less = []
         equal = []
         greater = []
@@ -52,15 +48,21 @@ class QuickSort:
                 if num > pivot:
                     greater.append(num)
             # Don't forget to return something!
-            return self.quickSort(less) + equal + self.quickSort(greater)
+            return self.de_and_conq_Sort(less) + equal + self.de_and_conq_Sort(greater)
         else:
             return nums
 
     def findKthLargest(self, nums, k):
-        ord_nums = self.quickSort(nums)
+        ord_nums = self.de_and_conq_Sort(nums)
         rev_ord_nums = ord_nums[::-1]
         return rev_ord_nums[k-1]
+
+# -------------------------------------------------------------
+# avg ==> O(n log n), wst ==> O(n^2): Quick Sort
+
 
 
 # -------------------------------------------------------------
 # O(n^2): Selection Sort, Insertion Sort, Bubble Sort
+
+
