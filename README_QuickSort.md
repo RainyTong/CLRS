@@ -32,3 +32,33 @@ class QuickSort:
             self.quicksort(array, left, p-1)
             self.quicksort(array, p+1, right)
 ```
+---
+```
+
+class RandomQuickSort:
+
+    def partition(self, nums, left, right):
+        p = random.randint(left, right)
+        pivot = nums[p]
+        nums_copy = nums[:]
+        for i in range(left, right+1):
+            if i == p:
+                continue
+            num = nums[i]
+            if num <= pivot:
+                nums_copy[left] = num
+                left += 1
+            if num > pivot:
+                nums_copy[right] = num
+                right -= 1
+        nums_copy[left] = pivot
+        return left, nums_copy
+
+    def quicksort(self, nums, left, right):
+        if left < right:
+            p, nums = self.partition(nums, left, right)
+            nums = self.quicksort(nums, left, p-1)
+            nums = self.quicksort(nums, p+1, right)
+        return nums
+
+```
