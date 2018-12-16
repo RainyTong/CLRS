@@ -11,7 +11,7 @@
 
 This file includes solutions in python for many kinds of **Sorting Algorithms**.
 
-All of them are beautiful python codes within around 10 lines!!!
+All of them are beautiful python codes with about 10 lines!!!
 
 
 - Find Kth Largest Element in an Array.
