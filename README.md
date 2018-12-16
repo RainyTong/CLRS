@@ -14,8 +14,9 @@ This file includes solutions in python for many kinds of **Sorting Algorithms**.
   Solution: QuickSelect in O(N)
 
 - Sort and Find Kth Largest Element in an Array.
-  Solution:
-     - QuickSort in O(nlogN) ==> Avg, O(N^2) ==> Worst     :seedling: *My favorate sorting algorithm!*:seedling:
+  
+  **Solution:**
+     - QuickSort in O(nlogN) -- O(N^2)     :seedling: *My favorate sorting algorithm!*:seedling:
      - Devide and Conquer Sorting algorithm in O(nlogN)
      - MergeSort in O(nlogN)
      - HeapSort in O(nlogN)
