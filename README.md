@@ -5,7 +5,7 @@
 
 > Do more while I'm still young. :wink:
 
-## Content
+### Content
 ---
 1. [Sort.py](https://github.com/RainyTong/CLRS/blob/master/Sort.py)
 
