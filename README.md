@@ -5,11 +5,15 @@
 
 > Do more while I'm still young. :wink:
 
-### Content
+## Content
 ---
 1. [Sort.py](https://github.com/RainyTong/CLRS/blob/master/Sort.py)
 
 This file includes solutions in python for many kinds of **Sorting Algorithms**.
+
+All of them are beautiful python codes within around 10 lines!!!
+
+
 - Find Kth Largest Element in an Array.
   
   **Solution:**
