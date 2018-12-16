@@ -12,7 +12,7 @@
 This file includes solutions in python for many kinds of **Sorting Algorithms**.
 - Find Kth Largest Element in an Array.
   
-  **Solution: **
+  **Solution:**
   - QuickSelect in O(N)
 
 - Sort and Find Kth Largest Element in an Array.
