@@ -120,3 +120,18 @@ class InsertionSort:
                 j -= 1
             nums[j + 1] = pivot
 
+
+class BubbleSort:
+    @staticmethod
+    def bubblesort(nums):
+        flag = 1
+        while flag:
+            swap = 0
+            for i in range(0, len(nums)-1):
+                if nums[i+1] < nums[i]:
+                    nums[i+1], nums[i] = nums[i], nums[i+1]
+                    swap += 1
+            if swap == 0:
+                flag = 0
+
+
