@@ -109,4 +109,14 @@ class RandomQuickSort:
 # -------------------------------------------------------------
 # O(n^2): Selection Sort, Insertion Sort, Bubble Sort
 
+class InsertionSort:
+    @staticmethod
+    def insertionsort(nums):
+        for i in range(1, len(nums)):
+            j = i - 1
+            pivot = nums[i]
+            while j >= 0 and nums[j] > pivot:
+                nums[j+1] = nums[j]
+                j -= 1
+            nums[j + 1] = pivot
 
